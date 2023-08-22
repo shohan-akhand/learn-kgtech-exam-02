@@ -1,25 +1,38 @@
 <div class="container">
-  <div class="ui segment">
+  <div>
     <h3>File size conversion</h3>
   </div>
   <div class="row">
     <div class="form-group col"></div>
     <label for="">Input Kilobyte KB</label>
-    <input class="form-control" class="input" (input)="onInput($event)" />
+    <input class="input" (input)="onInput($event)" />
   </div>
 
-  <div class="col">
-    <div>
+  <div class="container">
+    <div class="col">
       <label><b>Covert to Megabyte MB</b></label>
       <div>
         {{ kilobyte | convert : "mb" }}
       </div>
     </div>
-    <div>
+    <div class="col">
       <label><b>Covert to Gigabyte GB</b></label>
       <div>
         {{ kilobyte | convert : "gb" }}
       </div>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+  <div class="card" style="width: 18rem">
+    <div class="card-body">
+      <h5 class="card-title">Card title</h5>
+      <input class="input" (input)="headerInput($event)" />
+      <h6 class="card-subtitle mb-2 text-body-secondary">Card subtitle</h6>
+      <input class="input" (input)="bodyInput($event)" />
+      <p class="card-text"></p>
+      <button (click)="onButton()">OK</button>
     </div>
   </div>
 </div>
