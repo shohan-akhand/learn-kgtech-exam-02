@@ -10,29 +10,12 @@
 
   <div class="container">
     <div class="col">
-      <label><b>Covert to Megabyte MB</b></label>
+      <label><b>Converted Value</b></label>
       <div>
-        {{ kilobyte | convert : "mb" }}
-      </div>
-    </div>
-    <div class="col">
-      <label><b>Covert to Gigabyte GB</b></label>
-      <div>
-        {{ kilobyte | convert : "gb" }}
+        {{ kilobyte | conversion }}
       </div>
     </div>
   </div>
 </div>
 
-<div class="container">
-  <div class="card" style="width: 18rem">
-    <div class="card-body">
-      <h5 class="card-title">Card title</h5>
-      <input class="input" (input)="headerInput($event)" />
-      <h6 class="card-subtitle mb-2 text-body-secondary">Card subtitle</h6>
-      <input class="input" (input)="bodyInput($event)" />
-      <p class="card-text"></p>
-      <button (click)="onButton()">OK</button>
-    </div>
-  </div>
-</div>
+<app-card> </app-card>

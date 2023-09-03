@@ -3,11 +3,13 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
 import { ConvertPipe } from './convert.pipe';
+import { CardComponent } from './card/card.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    ConvertPipe
+    ConvertPipe,
+    CardComponent
   ],
   imports: [
     BrowserModule
